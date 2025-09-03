@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: lv2-final-mission
+  config:
+    import: "optional:file:.env[.properties]"
+
+  jpa:
+    defer-datasource-initialization: true
+
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: trace
+
+security:
+  jwt:
+    token:
+      secret-key: Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=
+      expire-length: 3600000
+
+post-mark:
+  server-token: e212a00d-8537-47b3-8dd6-7537f613d327
