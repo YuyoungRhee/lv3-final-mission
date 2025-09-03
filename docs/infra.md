@@ -94,3 +94,7 @@
 - **논리적 데이터베이스 분리:** 하나의 RDS 인스턴스 내에 `mission_dev`와 `mission_prod`라는 별개의 데이터베이스(스키마)를 생성하여 데이터가 섞이지 않도록 분리했습니다.
 - **설정 파일 분리:** `application-dev.yml`과 `application-prod.yml` 파일을 각각 작성하여 사용하는 데이터베이스의 정보(`url`)나 `ddl-auto` 정책 등을 환경별로 다르게 관리했습니다.
 - **환경별 실행:** 애플리케이션 실행 시 `Dspring.profiles.active` 옵션을 사용하여 `dev`와 `prod` 환경에 맞는 설정 파일을 선택적으로 로드하도록 구성했습니다.
+
+### 추가 요구사항
+인프라 아키텍처
+![img.png](infra_architecture.png)
